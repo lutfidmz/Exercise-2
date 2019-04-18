@@ -275,7 +275,8 @@
                     $("#result").text("=");
                     
                 }else{
-                    $("#result").text(x + "=");
+                    let result = eval(x)
+                    $("#result").text(result);
                 }
             });
         });
