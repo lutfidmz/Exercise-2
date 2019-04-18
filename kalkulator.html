@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program Kalkulator</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        #result {
+            border: 2px solid coral;
+            border-radius: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            font-size: 2em;
+
+
+            /* margin: 2px; */
+        }
+
+        .lut-card-body {
+            margin: 7px;
+        }
+
+        .td {
+            padding: 2em;
+        }
+
+        .btn {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* td:hover{
+            background-color: aqua;
+        } */
+    </style>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <h1 class="text-center">Simple Calculator</h1>
+
+        <div class="card">
+            <div class="lut-card-body">
+                <div id="result">0</div>
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <td class="td" id="7">
+                                <div class="btn btn-warning btn-block">7</div>
+                            </td>
+                            <td class="td" id="8">
+                                <div class="btn btn-warning btn-block">8</div>
+                            </td>
+                            <td class="td" id="9">
+                                <div class="btn btn-warning btn-block">9</div>
+                            </td>
+                            <td>
+                                <div id="plus" class="btn btn-warning btn-block">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td" id="4">
+                                <div class="btn btn-warning btn-block">4</div>
+                            </td>
+                            <td class="td" id="5">
+                                <div class="btn btn-warning btn-block">5</div>
+                            </td>
+                            <td class="td" id="6">
+                                <div class="btn btn-warning btn-block">6</div>
+                            </td>
+                            <td>
+                                <div id="minus" class="btn btn-warning btn-block">
+                                    <i class="fas fa-minus"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td" id="1">
+                                <div class="btn btn-warning btn-block">1</div>
+                            </td>
+                            <td class="td" id="2">
+                                <div class="btn btn-warning btn-block">2</div>
+                            </td>
+                            <td class="td" id="3">
+                                <div class="btn btn-warning btn-block">3</div>
+                            </td>
+                            <td>
+                                <div id="times" class="btn btn-warning btn-block">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="0" colspan="3" class="text-center">
+                                <div class="btn btn-warning btn-block">0</div>
+                            </td>
+                            <td>
+                                <div id="equal" class="btn btn-danger btn-block">
+                                    <i class="fas fa-equals"></i>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $("#1").click(function(){
+
+                let x = $("#result").text();
+                if (x == 0) {
+                    $("#result").text(1);
+                    
+                }else{
+                    $("#result").text(x + 1);
+                }
+            });
+            $("#2").click(function(){
+                //alert("2");
+                 let x = $("#result").text();
+                if (x == 0) {
+                    $("#result").text(1);
+                    
+                }else{
+                    $("#result").text(x + 1);
+                }
+            });
+            $("#3").click(function(){
+                //alert("3");
+                 let x = $("#result").text();
+                if (x == 0) {
+                    $("#result").text(1);
+                    
+                }else{
+                    $("#result").text(x + 1);
+                }
+            });
+            $("#4").click(function(){
+                //alert("4");
+                 let x = $("#result").text();
+                if (x == 0) {
+                    $("#result").text(1);
+                    
+                }else{
+                    $("#result").text(x + 1);
+                }
+            });
+            $("#5").click(function(){
+                //alert("5");
+                 let x = $("#result").text();
+                if (x == 0) {
+                    $("#result").text(1);
+                    
+                }else{
+                    $("#result").text(x + 1);
+                }
+            });
+            $("#6").click(function(){
+                //alert("6");
+                 let x = $("#result").text();
+                if (x == 0) {
+                    $("#result").text(1);
+                    
+                }else{
+                    $("#result").text(x + 1);
+                }
+            });
+            $("#7").click(function(){
+                //alert("7");
+                 let x = $("#result").text();
+                if (x == 0) {
+                    $("#result").text(1);
+                    
+                }else{
+                    $("#result").text(x + 1);
+                }
+            });
+            $("#8").click(function(){
+                //alert("8");
+                 let x = $("#result").text();
+                if (x == 0) {
+                    $("#result").text(1);
+                    
+                }else{
+                    $("#result").text(x + 1);
+                }
+            });
+            $("#9").click(function(){
+                //alert("9");
+                 let x = $("#result").text();
+                if (x == 0) {
+                    $("#result").text(1);
+                    
+                }else{
+                    $("#result").text(x + 1);
+                }
+            });
+            $("#0").click(function(){
+                //alert("0");
+                 let x = $("#result").text();
+                if (x == 0) {
+                    $("#result").text(1);
+                    
+                }else{
+                    $("#result").text(x + 1);
+                }
+            });
+            $("#minus").click(function(){
+                //alert("minus");
+                 let x = $("#result").text();
+                if (x == 0) {
+                    $("#result").text(1);
+                    
+                }else{
+                    $("#result").text(x + 1);
+                }
+            });
+            $("#times").click(function(){
+                //alert("times");
+                 let x = $("#result").text();
+                if (x == 0) {
+                    $("#result").text(1);
+                    
+                }else{
+                    $("#result").text(x + 1);
+                }
+            });
+            $("#equal").click(function(){
+                //alert("equal");
+                 let x = $("#result").text();
+                if (x == 0) {
+                    $("#result").text(1);
+                    
+                }else{
+                    $("#result").text(x + 1);
+                }
+            });
+            $("#plus").click(function(){
+                //alert("plus");
+                 let x = $("#result").text();
+                if (x == 0) {
+                    $("#result").text(1);
+                    
+                }else{
+                    $("#result").text(x + 1);
+                }
+            });
+            
+        });
+    </script>
+</body>
+
+</html>
